@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests" verbose="5">
+	<test thread-count="5" name="my hub spot test chrome"
+		parallel="methods">
+
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.myTest.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- <test thread-count="5" name="my hub spot test ff"
+		parallel="methods">
+		<parameter name="browser" value="ff" />
+		<classes>
+			<class name="com.myTest.LoginTest" />
+		</classes>
+	</test> Test
+ -->
+</suite> <!-- Suite -->
